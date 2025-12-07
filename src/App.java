@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 public class App {
     public static void main(String[] args) throws Exception {
         /**
@@ -16,5 +18,17 @@ public class App {
          * Explanation: The
          */
         System.out.println("Hello, World!");
+        Solution solution = new Solution();
+        int[] nums = { 100, 4, 200, 1, 3, 2 };
+        int longestConsecutiveSequence = solution.longestConsecutiveSequence(nums);
+        System.out.println("The given input is: " + Arrays.toString(nums) + " and the longest consecutive sequence is: "
+                + longestConsecutiveSequence);
+        System.out.println();
+
+        int[] anotherSetofInputNums = { 0, 3, 7, 2, 5, 8, 4, 6, 0, 1 };
+        longestConsecutiveSequence = solution.longestConsecutiveSequence(anotherSetofInputNums);
+        System.out.println("The given input is: " + Arrays.toString(
+                anotherSetofInputNums) + " and the longest consecutive sequence is: "
+                + longestConsecutiveSequence);
     }
 }
